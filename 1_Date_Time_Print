@@ -1,0 +1,41 @@
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+       Date curdate = new Date();
+       System.out.println(curdate);
+       System.out.println ("Year:" + (curdate.getYear()+1900));
+       System.out.println ("Month:" );
+       switch(curdate.getMonth())
+       {
+          case 0 : System.out.println("January"); break;
+          case 1 : System.out.println("February"); break;
+          case 2 : System.out.println("March"); break;
+          case 3 : System.out.println("April"); break;
+          case 4 : System.out.println("May"); break;
+          case 5 : System.out.println("June"); break;
+          case 6 : System.out.println("July"); break;
+          case 7 : System.out.println("August"); break;
+          case 8 : System.out.println("September"); break;
+          case 9 : System.out.println("October"); break;
+          case 10 : System.out.println("November"); break;
+          case 11 : System.out.println("December"); break;
+       }
+       System.out.println ("Date:" + curdate.getDate());
+       System.out.println ("Day of the week:");
+       switch(curdate.getDay())
+       {
+          case 0 : System.out.println("Sunday"); break;
+          case 1 : System.out.println("Monday"); break;
+          case 2 : System.out.println("Tuesday"); break;
+          case 3 : System.out.println("Wednesday"); break;
+          case 4 : System.out.println("Thursday"); break;
+          case 5 : System.out.println("Friday"); break;
+          case 6 : System.out.println("Saturday"); break;
+       }
+       int hour = (int) ((curdate.getTime() / (1000*60*60)) % 24);
+       System.out.println("Hours:" + hour);
+       System.out.println("Minutes:" + hour);
+       System.out.println("Seconds:" + hour);
+        
+    }
+}
