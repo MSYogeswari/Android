@@ -3,9 +3,9 @@ class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Enter a number");
         Scanner sc = new Scanner(System.in);
-        String num = sc.nextLine();
-        int num1 = Integer.valueOf(num.substring(0,2));
-        int num2 = Integer.valueOf(num.substring(2,4));
+        int num = sc.nextInt();
+        int num1 = num/100;
+        int num2 = num%100;
         int sum = num1+num2;
         if((sum*sum) == Integer.valueOf(num))
             System.out.println("Fasion Number");
